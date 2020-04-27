@@ -1,5 +1,5 @@
 <suite name = "FirstClassTest">
-    <parameter name = "par1" value = "Artem loh"/>
+    <parameter name = "par1" value = "Artem Gramushnyak"/>
     <parameter name = "par2" value = "Net"/>
 
 <test name = "FirstClass">
