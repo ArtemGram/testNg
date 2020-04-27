@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.testng.FirstClassTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-04-27T15:25:56" hostname="Artem.Gramushnyak" time="0.008">
+  <properties/>
+  <testcase name="testNumber3[0](Artem loh, Net)" classname="com.example.testng.FirstClassTest" time="0.004"/>
+  <testcase name="testNumber4[0](Artem, Molodets)" classname="com.example.testng.FirstClassTest" time="0.001"/>
+  <testcase name="testNumber4[1](Sasha, Krasava)" classname="com.example.testng.FirstClassTest" time="0.0"/>
+  <testcase name="testNumber1" classname="com.example.testng.FirstClassTest" time="0.0"/>
+  <system-out><![CDATA[Artem lohNet
+ArtemMolodets
+SashaKrasava
+com.example.testng.FirstClassTest
+test Group Sanity
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

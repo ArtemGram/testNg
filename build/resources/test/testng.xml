@@ -1,0 +1,22 @@
+<suite name = "FirstClassTest">
+    <parameter name = "par1" value = "Artem loh"/>
+    <parameter name = "par2" value = "Net"/>
+<test name = "FirstClass">
+    <groups>
+
+        <dependencies>
+            <group name="smoke" depends-on = "sanity"/>
+        </dependencies>
+
+        <run>
+            <include name="sanity"/>
+        </run>
+    </groups>
+
+    <classes>
+        <class name="com.example.testng.FirstClassTest"/>
+    </classes>
+
+
+</test>
+</suite>
