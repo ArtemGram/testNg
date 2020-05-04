@@ -1,23 +1,24 @@
-<suite name = "FirstClassTest">
-    <parameter name = "par1" value = "Artem Gramushnyak"/>
-    <parameter name = "par2" value = "Net"/>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Artem suite">
+    <test name="FirstClassTest">
+        <parameter name="par1" value="Artem Gramushnyak"/>
+        <parameter name="par2" value="Net"/>
 
-<test name = "FirstClass">
-    <groups>
+        <groups>
+            <run>
+                <include name="sanity"/>
+                <exclude name="smoke"/>
+            </run>
+            <dependencies>
+                <group name="regression" depends-on="smoke"/>
+                <group name="smoke" depends-on="sanity"/>
+            </dependencies>
+        </groups>
 
-        <dependencies>
-            <group name="smoke" depends-on = "sanity"/>
-        </dependencies>
+        <classes>
+            <class name="com.example.testng.FirstClassTest"/>
+        </classes>
 
-        <run>
-            <include name="sanity"/>
-        </run>
-    </groups>
-
-    <classes>
-        <class name="com.example.testng.FirstClassTest"/>
-    </classes>
-
-
-</test>
+    </test>
 </suite>
+

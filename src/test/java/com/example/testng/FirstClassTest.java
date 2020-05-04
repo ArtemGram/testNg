@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 
 public class FirstClassTest {
 
-    @BeforeTest
+    @BeforeGroups
     public void setUp() {
         System.out.print("First test execution "); //
     }
@@ -48,7 +48,7 @@ public class FirstClassTest {
         System.out.println(a + b);
     }
 
-    @AfterTest (
+    @AfterGroups (
             dependsOnGroups = "sanity"
     )
     public void tearDown() {
